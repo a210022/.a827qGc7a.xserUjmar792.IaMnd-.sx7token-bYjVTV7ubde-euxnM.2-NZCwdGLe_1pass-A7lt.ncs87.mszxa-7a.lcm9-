@@ -40,20 +40,8 @@
         <div id="pointer"></div>
         <canvas id="canvas"></canvas>
     </div>
-<form action="?" method="POST">
-      <div class="g-recaptcha" data-sitekey="6LethI0qAAAAAM9TgQcdx0GV27789pAC2ztc75Ct"></div>
-      <br>
-      <input type="submit" id="spin" name="button" value="開始" disabled></input>
-    </form>
-    <script type="text/javascript">
-	function clearcall(code) {
-		if(code !== ""){
-			$(':submit[name=button]').removeAttr("disabled");
-		}
-	}
-	</script>
-
-    <p id="result"></p>
+<button id="spin">開始する</button>
+	  <p id="result"></p>
 <script>
         const canvas = document.getElementById('canvas');
         const ctx = canvas.getContext('2d');
