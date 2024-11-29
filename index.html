@@ -43,8 +43,16 @@
 <form action="?" method="POST">
       <div class="g-recaptcha" data-sitekey="6LethI0qAAAAAM9TgQcdx0GV27789pAC2ztc75Ct"></div>
       <br/>
+      <button id="spin">開始する</button>
+      <input type="submit" id="spin" name="button" value="開始" disabled>
     </form>
-    <button id="spin">開始する</button>
+    <script type="text/javascript">
+	function clearcall(code) {
+		if(code !== ""){
+			$(':submit[name=button]').removeAttr("disabled");
+		}
+	}
+	</script>
 
     <p id="result"></p>
 <script>
